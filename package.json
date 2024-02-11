@@ -28,7 +28,7 @@
     "complex"
   ],
   "author": "Kamil Kiryluk",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wujekkiryl/advanced-url-search-params/issues"
   },
