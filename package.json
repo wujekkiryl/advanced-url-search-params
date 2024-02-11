@@ -1,0 +1,43 @@
+{
+  "name": "advanced-url-search-params",
+  "version": "1.0.0",
+  "description": "Tool for converting search params to objects that can be used in typescript application.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wujekkiryl/advanced-url-search-params.git"
+  },
+  "keywords": [
+    "typescript",
+    "url",
+    "params",
+    "search",
+    "query",
+    "filter",
+    "filters",
+    "sort",
+    "sorting",
+    "pagination",
+    "paginate",
+    "advanced",
+    "complex"
+  ],
+  "author": "Kamil Kiryluk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wujekkiryl/advanced-url-search-params/issues"
+  },
+  "homepage": "https://github.com/wujekkiryl/advanced-url-search-params#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
