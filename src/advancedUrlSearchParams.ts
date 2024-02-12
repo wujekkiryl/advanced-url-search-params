@@ -2,8 +2,6 @@ import { Filter } from "./types/filter";
 import { Pagination } from "./types/pagination";
 import { Sorting } from "./types/sorting";
 import { parseFilters, parsePagination, parseSorting } from "./parsers";
-import { extractPaginationFromParams } from "./extractors/pagination/pagination.extractor";
-import { extractSortingFromParams } from "./extractors/sorting/sorting.extractor";
 
 export class AdvancedUrlSearchParams {
   private readonly _filters: Filter[];
@@ -28,9 +26,7 @@ export class AdvancedUrlSearchParams {
       params = new URLSearchParams(searchParams);
     }
     this._pagination = parsePagination(params);
-    params = extractPaginationFromParams(params);
     this._sorting = parseSorting(params);
-    params = extractSortingFromParams(params);
     this._filters = parseFilters(params);
   }
 }

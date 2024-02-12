@@ -45,13 +45,13 @@ Here are some examples demonstrating how to use AdvancedUrlSearchParams:
 ```typescript
 import { AdvancedUrlSearchParams } from "advanced-url-search-params";
 
-const searchParamsString = "page=1&size=10&column=name&direction=asc&filter=name:contains:john";
+const searchParamsString = "page=1&size=10&name:eq=john&sort=startDate";
 
 const urlSearchParams = new AdvancedUrlSearchParams(searchParamsString);
 
 console.log(urlSearchParams.pagination); // { page: 1, size: 10 }
 console.log(urlSearchParams.sorting); // [{ column: 'name', direction: 'asc' }]
-console.log(urlSearchParams.filters); // [{ column: 'name', value: 'john', rule: 'contains' }]
+console.log(urlSearchParams.filters); // [{ column: 'name', value: 'john', rule: 'eq' }]
 ```
 
 ## API
@@ -111,6 +111,32 @@ console.log(urlSearchParams.filters); // [{ column: 'name', value: 'john', rule:
 - `rule: FilterRule`
 
   The filter rule (enum).
+
+Filter rules:
+```typescript
+  Equal = "eq",
+  NotEqual = "ne",
+  GreaterThan = "gt",
+  GreaterThanOrEqual = "ge",
+  LessThan = "lt",
+  LessThanOrEqual = "le",
+  Contains = "contains",
+  NotContains = "not_contains",
+  StartsWith = "starts_with",
+  EndsWith = "ends_with",
+  In = "in",
+  NotIn = "not_in",
+  Between = "between",
+  NotBetween = "not_between",
+  IsNull = "is_null",
+  IsNotNull = "is_not_null",
+  IsEmpty = "is_empty",
+  IsNotEmpty = "is_not_empty",
+  IsTrue = "is_true",
+  IsFalse = "is_false",
+```
+
+## Special thanks to [@dszwcz](https://github.com/dszwcz) for his support and contribution.
 
 ## Contributing
 

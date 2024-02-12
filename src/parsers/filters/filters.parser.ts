@@ -14,10 +14,6 @@ export function parseFilters(searchParams: URLSearchParams): Filter[] {
           value,
         });
       }
-    } else {
-      throw new Error(
-        `Invalid filter, no property or rule in ${property}:${rule}=${value}`,
-      );
     }
   });
   return filters;
