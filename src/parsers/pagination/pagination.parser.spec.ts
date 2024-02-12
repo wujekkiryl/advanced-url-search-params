@@ -3,6 +3,8 @@ test("Should return pagination object from URLSearchParams object", () => {
   const urlParams = new URLSearchParams("page=1&size=10");
   const pagination = parsePagination(urlParams);
   expect(pagination).toBeDefined();
+  expect(pagination.page).toBe(1);
+  expect(pagination.size).toBe(10);
 });
 test("Should return empty pagination with undefined params when no query params are passed", () => {
   const urlParams = new URLSearchParams();

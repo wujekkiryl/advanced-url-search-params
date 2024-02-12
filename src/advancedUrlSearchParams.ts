@@ -31,6 +31,9 @@ export class AdvancedUrlSearchParams
       const url = new URL(searchParams);
       params = new URLSearchParams(url.search);
     } catch (error) {
+      if (searchParams.includes("?")) {
+        searchParams = searchParams.split("?")[1];
+      }
       params = new URLSearchParams(searchParams);
     }
     this._pagination = parsePagination(params);
