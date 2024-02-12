@@ -1,7 +1,7 @@
 import { FilterRule } from "../enums/filterRule";
 
-export type Filter = {
+export interface Filter {
   column: string;
   value: string;
   rule: FilterRule;
-};
+}

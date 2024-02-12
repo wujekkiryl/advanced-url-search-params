@@ -1,6 +1,6 @@
 import { validateSorting } from "./validator/sorting.validator";
 import { SortingDirection } from "../../enums/sortingDirection";
-import { Sorting } from "../../types/sorting";
+import { Sorting } from "../../interfaces/sorting";
 
 export function parseSorting(searchParams: URLSearchParams): Sorting[] {
   const sorting: Sorting[] = [];

@@ -1,9 +1,17 @@
-import { Filter } from "./types/filter";
-import { Pagination } from "./types/pagination";
-import { Sorting } from "./types/sorting";
+import { Filter } from "./interfaces/filter";
+import { Pagination } from "./interfaces/pagination";
+import { Sorting } from "./interfaces/sorting";
 import { parseFilters, parsePagination, parseSorting } from "./parsers";
 
-export class AdvancedUrlSearchParams {
+export interface AdvancedUrlSearchParamsInterface {
+  filters: Filter[];
+  pagination: Pagination;
+  sorting: Sorting[];
+}
+
+export class AdvancedUrlSearchParams
+  implements AdvancedUrlSearchParamsInterface
+{
   private readonly _filters: Filter[];
   private readonly _pagination: Pagination;
   private readonly _sorting: Sorting[];

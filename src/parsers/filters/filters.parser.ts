@@ -1,6 +1,6 @@
 import { validateFilters } from "./validator/filters.validator";
 import { FilterRule } from "../../enums/filterRule";
-import { Filter } from "../../types/filter";
+import { Filter } from "../../interfaces/filter";
 
 export function parseFilters(searchParams: URLSearchParams): Filter[] {
   const filters: Filter[] = [];

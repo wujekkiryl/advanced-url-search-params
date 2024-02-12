@@ -1,4 +1,4 @@
-import { Pagination } from "../../types/pagination";
+import { Pagination } from "../../interfaces/pagination";
 
 export function parsePagination(searchParams: URLSearchParams): Pagination {
   const page = searchParams.get("page");
