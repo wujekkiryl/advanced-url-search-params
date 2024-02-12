@@ -1,6 +1,6 @@
 {
   "name": "advanced-url-search-params",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tool for converting search params to objects that can be used in typescript application.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,7 +31,11 @@
     "advanced",
     "complex"
   ],
-  "author": "Kamil Kiryluk",
+  "author": {
+    "name": "Kamil Kiryluk",
+    "email": "kamil@kiryluk.eu",
+    "url": "https://github.com/wujekkiryl"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wujekkiryl/advanced-url-search-params/issues"
