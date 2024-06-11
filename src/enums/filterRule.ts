@@ -19,4 +19,7 @@ export enum FilterRule {
   IsNotEmpty = "is_not_empty",
   IsTrue = "is_true",
   IsFalse = "is_false",
+  Has = "has",
+  HasEvery = "has_every",
+  HasSome = "has_some",
 }

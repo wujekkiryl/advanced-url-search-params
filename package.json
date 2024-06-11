@@ -1,6 +1,6 @@
 {
   "name": "advanced-url-search-params",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Tool for converting search params to objects that can be used in typescript application.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

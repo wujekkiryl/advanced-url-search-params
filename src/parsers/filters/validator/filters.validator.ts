@@ -21,6 +21,9 @@ export function validateFilters(
     FilterRule.NotIn,
     FilterRule.Between,
     FilterRule.NotBetween,
+    FilterRule.Has,
+    FilterRule.HasEvery,
+    FilterRule.HasSome,
   ];
   const rulesThatNotExpectsValue = [
     FilterRule.IsNull,
